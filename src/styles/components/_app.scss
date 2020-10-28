@@ -1,0 +1,177 @@
+/* app */
+
+.app {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	min-height: 1px;
+
+  &__title {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 36px;
+  }
+
+  &__subtitle {
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 32px;
+  }
+}
+
+.section-title {
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 60px;
+	color: #027DC5;
+	text-align: center;
+	font-family: $serif;
+	position: relative;
+	z-index: 2;
+
+	@include media ('<dt-big') {
+		font-size: 40px;
+		line-height: 52px;
+	}
+	
+	@include media ('<dt-min') {
+		font-size: 34px;
+		line-height: 40px;
+	}
+	
+	@include media ('<tb') {
+		font-size: 24px;
+		line-height: 34px;
+	}
+}
+
+.section-subtitle {
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 60px;
+	text-align: center;
+	color: #027DC5;
+	font-family: $serif;
+	position: relative;
+	z-index: 2;
+	letter-spacing: 1px;
+
+	@include media ('<dt-big') {
+		font-size: 30px;
+		line-height: 40px;
+	}
+	
+	@include media ('<dt-min') {
+		
+	}
+	
+	@include media ('<tb') {
+		font-size: 24px;
+		line-height: 30px;
+	}
+}
+
+.block-title {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 24px;
+	text-align: center;
+	font-family: $serif;
+	color: #002E48;
+
+	@include media ('<tb') {
+		font-size: 20px;
+		line-height: 26px;
+	}
+}
+
+.inner-title {
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 700;
+	color: #027DC5;
+	text-transform: uppercase;
+
+	@include media ('<tb') {
+		font-size: 18px;
+		line-height: 22px;
+	}
+}
+
+.text {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 500;
+	color: #002E48;
+	font-family: $serif;
+
+	@include media ('<dt-big') {
+
+	}
+	
+	@include media ('<dt-min') {
+		
+	}
+	
+	@include media ('<tb') {
+		font-size: 16px;
+		line-height: 26px;
+	}
+}
+
+.mr60 {
+	margin-bottom: 60px;
+
+	@include media ('<dt-big') {
+		margin-bottom: 50px;
+	}
+
+	@include media ('<tb') {
+		margin-bottom: 40px;
+	}
+}
+
+.mr30 {
+	margin-bottom: 30px;
+}
+
+.mr20 {
+	margin-bottom: 20px;
+}
+
+.sc-pd {
+	padding-top: 100px;
+	padding-bottom: 100px;
+
+	@include media ('<dt-big') {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	@include media ('<dt-min') {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	@include media ('<tb') {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+}
+
+
+@include media ('<dt-big') {
+
+}
+
+@include media ('<dt-min') {
+	
+}
+
+@include media ('<tb') {
+	
+}
+
+@include media ('<ph') {
+	
+}

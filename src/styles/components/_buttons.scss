@@ -1,0 +1,59 @@
+/* btn */
+
+.btn {
+	display: block;
+	width: 100%;
+	max-width: 248px;
+	margin: 0 auto;
+	padding: 10px;
+	border: 1px solid #027DC5;
+	text-shadow: none;
+	border-radius: 20px;
+	background-color: #027DC5;
+	z-index: 2;
+
+	position: relative;
+	text-align: center;
+
+	font-weight: 700;
+	font-style: normal;
+	font-size: 18px;
+	line-height: 28px;
+	color: $white;
+
+	// animate
+	/* transition-property: background, color;
+	transition-duration: $transition_dur;
+	transition-timing-function: $transition_tfn; */
+
+	transition: .4s;
+
+	// defaults
+	cursor: pointer;
+	outline: none;
+
+	@at-root :root.hover &:hover{
+		background-color: transparent;
+		color: #027DC5;
+		box-shadow: 0px 0px 6px #027DC5;
+	}
+
+	&:active {
+		transition: .1s;
+		box-shadow: 0px 0px 0px #027DC5;
+	}
+
+	@include media ('<dt-big') {
+
+	}
+	
+	@include media ('<dt-min') {
+		
+	}
+	
+	@include media ('<tb') {
+		max-width: 180px;
+		padding: 11px;
+		background: linear-gradient(180deg, #027DC5 0%, #0DC2FF 53.14%, #027DC5 100%);
+	}
+}

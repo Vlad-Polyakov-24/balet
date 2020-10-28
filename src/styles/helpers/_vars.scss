@@ -1,0 +1,30 @@
+/*
+	vars
+*/
+
+$fonts: '../fonts/';
+$images: '../images/';
+
+// fonts
+$sans: 'Noto Sans JP', serif;
+$serif: 'Noto Serif JP', serif;
+$roboto: 'Roboto', serif;
+
+$breakpoints: (
+  ph: 375px,
+  tb: 768px,
+  dt-min: 1024px,
+  dt-big: 1440px,
+);
+
+// wrap
+$container-p: 15px;
+$container-width: 1140px;
+
+// colors
+$white: #fff;
+$black: #000;
+
+// transitions
+$transition_dur: .5s;
+$transition_tfn: cubic-bezier(.165,.84,.44,1);
