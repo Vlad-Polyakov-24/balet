@@ -245,21 +245,21 @@
 
 		@at-root :root.hover &:hover{
 			&:after {
-				width: 40px;
-				left: 50%;
-				transform: translateX(-50%);
+				width: 100%;
+				opacity: 1;
 			}
 		}
 
 		&:after {
 			content: '';
 			position: absolute;
-			width: 0px;
+			width: 0;
 			height: 2px;
-			bottom: -2px;
+			bottom: -4px;
 			left: 0;
 			background-color: #027DC5;
 			transition: all 0.3s;
+			opacity: 0;
 		}
 	}
 
