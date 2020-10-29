@@ -70,5 +70,13 @@ for (let i = 0; i < input.length; i++) {
 }
 /*=======*/
 
+/*preloader*/
+window.onload = function () {
+	window.setTimeout(function () {
+		document.body.classList.add('loaded');
+	}, 500);
+};
+/*=======*/
+
 objectFitImages();
 mobileMenu();
