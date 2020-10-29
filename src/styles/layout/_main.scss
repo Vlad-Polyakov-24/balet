@@ -76,7 +76,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		white-space: nowrap;
+		margin: 0 -5px;
 		
 		@include media ('<dt-min') {
 			flex-direction: column;
@@ -90,8 +90,10 @@
 		font-weight: 700;
 		font-family: $serif;
 		color: #fff;
+		padding: 0 5px;
 
 		&:nth-child(1) {
+			width: 33%;
 
 			@include media ('<dt-min') {
 				margin-bottom: 50px;
@@ -106,6 +108,7 @@
 		&:nth-child(2) {
 			font-size: 28px;
 			line-height: 40px;
+			width: 29%;
 
 			@include media ('<dt-big') {
 				font-size: 24px;
@@ -125,6 +128,10 @@
 				line-height: 22px;
 				margin-bottom: 19px;
 			}
+		}
+
+		&:nth-child(3) {
+			width: 36%;
 		}
 
 		@include media ('<dt-big') {
