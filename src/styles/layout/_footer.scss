@@ -225,6 +225,7 @@
 	&__copyright-list {
 		display: flex;
 		justify-content: space-between;
+		position: relative;
 
 		@include media ('<tb') {
 			flex-direction: column;
@@ -236,6 +237,18 @@
 		color: #fff;
 		font-size: 12px;
 		line-height: 16px;
+
+		&.copyrht {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+
+			@include media ('<dt-min') {
+				position: relative;
+				left: auto;
+				transform: translateX(0);
+			}
+		}
 
 		@include media ('<tb') {
 			font-size: 10px;
