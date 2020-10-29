@@ -97,6 +97,7 @@
 
 			@include media ('<dt-min') {
 				margin-bottom: 50px;
+				width: 100%;
 			}
 
 			@include media ('<tb') {
@@ -115,12 +116,9 @@
 				line-height: 28px;
 			}
 
-			span {
-				display: block;
-			}
-
 			@include media ('<dt-min') {
 				margin-bottom: 20px;
+				width: 100%;
 			}
 
 			@include media ('<tb') {
@@ -128,10 +126,18 @@
 				line-height: 22px;
 				margin-bottom: 19px;
 			}
+
+			span {
+				display: block;
+			}
 		}
 
 		&:nth-child(3) {
 			width: 36%;
+
+			@include media ('<dt-min') {
+				width: 100%;
+			}
 		}
 
 		@include media ('<dt-big') {
