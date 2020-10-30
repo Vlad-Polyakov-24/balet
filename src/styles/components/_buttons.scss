@@ -22,9 +22,6 @@
 	color: $white;
 
 	// animate
-	/* transition-property: background, color;
-	transition-duration: $transition_dur;
-	transition-timing-function: $transition_tfn; */
 
 	transition: .4s;
 
@@ -41,14 +38,6 @@
 	&:active {
 		transition: .1s;
 		box-shadow: 0px 0px 0px #027DC5;
-	}
-
-	@include media ('<dt-big') {
-
-	}
-	
-	@include media ('<dt-min') {
-		
 	}
 	
 	@include media ('<tb') {
