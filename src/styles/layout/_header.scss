@@ -15,13 +15,14 @@
 	&__row {
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
 		position: relative;
 	}
 
 	&__logo-link {
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
+		height: 100%;
 		background-image: url('/images/ico/logo.svg');
 		background-position: 0 50%;
 		background-repeat: no-repeat;
